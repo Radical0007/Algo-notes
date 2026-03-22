@@ -232,7 +232,3 @@ docs/contests/index.md
 ---
 
 
-
-然后以后自己照着做。
-
-我也可以下一条直接帮你写一份**可直接复制到仓库里的 `docs/contribute-guide.md` 成品**。
