@@ -2,4 +2,4 @@
 
 这里整理 Codeforces 的刷题题解。
 ### CF2209 
-A：(./CF2209 AFlip Flops)
+A：(CF2209 AFlip Flops)
