@@ -1,0 +1,10 @@
+site_name: Algo Notes
+site_url: https://Radical0007.github.io/algo-notes/
+
+theme:
+  name: mkdocs
+
+nav:
+  - 首页: index.md
+  - 题解:
+      - Two Sum: problems/two-sum.md
