@@ -6,5 +6,34 @@ theme:
 
 nav:
   - 首页: index.md
-  - 题解:
-      - Two Sum: problems/two-sum.md
+
+  - 刷题题解:
+      - Codeforces: solutions/codeforces/index.md
+      - 牛客: solutions/nowcoder/index.md
+      - 洛谷: solutions/luogu/index.md
+      - 码蹄集: solutions/matiji/index.md
+      - ACWing: solutions/acwing/index.md
+      - 其他: solutions/others/index.md
+
+  - 博客算法思想:
+      - 模块首页: blog/index.md
+      - 双指针: blog/two-pointers.md
+      - 二分: blog/binary-search.md
+      - DP 思想: blog/dp-thinking.md
+
+  - 算法模板:
+      - 模块首页: templates/index.md
+      - 并查集: templates/union-find.md
+      - 树状数组: templates/fenwick.md
+      - 线段树: templates/segment-tree.md
+
+  - 专题训练:
+      - 模块首页: topics/index.md
+      - 动态规划: topics/dp.md
+      - 图论: topics/graph.md
+      - 贪心: topics/greedy.md
+
+  - 比赛记录:
+      - 模块首页: contests/index.md
+
+  - 关于: about.md
