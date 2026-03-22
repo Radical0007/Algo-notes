@@ -1,0 +1,68 @@
+:root > * {
+  --md-primary-fg-color: #1e3a8a;
+  --md-primary-fg-color--light: #3b82f6;
+  --md-primary-fg-color--dark: #172554;
+  --md-accent-fg-color: #2563eb;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #0f172a;
+  --md-primary-fg-color--light: #1e293b;
+  --md-primary-fg-color--dark: #020617;
+  --md-accent-fg-color: #60a5fa;
+}
+
+.md-typeset h1 {
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.md-typeset h2,
+.md-typeset h3 {
+  font-weight: 700;
+}
+
+.md-typeset p,
+.md-typeset li {
+  line-height: 1.8;
+}
+
+.md-typeset code {
+  border-radius: 6px;
+}
+
+.md-typeset .highlight pre {
+  border-radius: 12px;
+}
+
+.home-card {
+  padding: 18px;
+  border: 1px solid rgba(120, 120, 120, 0.18);
+  border-radius: 16px;
+  margin: 14px 0;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.home-card h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.home-card p {
+  margin-bottom: 0;
+}
+
+.contact-box {
+  padding: 16px 18px;
+  border-left: 4px solid var(--md-accent-fg-color);
+  border-radius: 10px;
+  background: rgba(37, 99, 235, 0.08);
+  margin-top: 20px;
+}
+
+.note-soft {
+  padding: 14px 16px;
+  border-radius: 12px;
+  background: rgba(30, 58, 138, 0.08);
+  margin: 16px 0;
+}
