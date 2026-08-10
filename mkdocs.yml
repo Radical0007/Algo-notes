@@ -11,16 +11,13 @@ theme:
   name: material
   language: zh
   font: false
-  logo: assets/images/logo.svg
   favicon: assets/images/favicon.svg
   icon:
+    logo: fontawesome/solid/code
     repo: fontawesome/brands/github
   features:
-    - navigation.instant
-    - navigation.instant.progress
     - navigation.tracking
     - navigation.tabs
-    - navigation.tabs.sticky
     - navigation.sections
     - navigation.expand
     - navigation.top
@@ -38,15 +35,15 @@ theme:
         name: 跟随系统主题
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: custom
-      accent: custom
+      primary: white
+      accent: deep orange
       toggle:
         icon: material/brightness-7
         name: 切换到深色模式
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: custom
-      accent: custom
+      primary: black
+      accent: deep orange
       toggle:
         icon: material/brightness-4
         name: 切换到浅色模式
@@ -54,16 +51,13 @@ theme:
 extra_css:
   - stylesheets/extra.css
 
-extra_javascript:
-  - javascripts/extra.js
-
 markdown_extensions:
   - admonition
   - attr_list
   - md_in_html
   - tables
   - toc:
-      permalink: true
+      permalink: false
       title: 本页目录
   - pymdownx.details
   - pymdownx.highlight:
