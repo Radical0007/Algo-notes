@@ -22,7 +22,7 @@
 
 ## 代码
 
-```
+```cpp
 #include <bits/stdc++.h>
 #define int long long
 #define endl "\n"
@@ -71,7 +71,7 @@ signed main(){
 
 ## 复杂度
 
-O（n2）
+`O(n^2)`
 
 
 
