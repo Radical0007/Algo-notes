@@ -10,4 +10,4 @@
   <div class="topic-card"><h3>数据结构</h3><p>根据操作与复杂度要求选择合适的数据结构。</p></div>
 </div>
 
-<div class="empty-state">专题训练会随着题解积累逐渐展开，欢迎从一个知识点开始。</div>
+<div class="empty-state">专题文章将在后续按知识点补充。</div>

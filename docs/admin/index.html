@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="referrer" content="no-referrer">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src 'self' https: http://localhost:* http://127.0.0.1:*; style-src 'self'; script-src 'self'; img-src 'self' data:; base-uri 'none'; object-src 'none';">
+    <title>Algo Notes / 内容管理</title>
+    <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="admin.css">
+    <script src="config.js"></script>
+    <script src="admin.js" defer></script>
+  </head>
+  <body>
+    <main class="admin-shell">
+      <header class="admin-header">
+        <div>
+          <p class="eyebrow">ALGO NOTES / CONTENT ADMIN</p>
+          <h1>内容管理</h1>
+          <p class="subtitle">通过管理员入口提交 Markdown 题解，发布后由 GitHub Actions 自动构建。</p>
+        </div>
+        <a class="back-link" href="../">返回站点</a>
+      </header>
+
+      <section class="panel setup-panel" data-panel="setup" hidden>
+        <h2>配置上传服务</h2>
+        <p>首次使用时填写 Cloudflare Worker 地址。地址只保存在当前浏览器，不会提交到仓库。</p>
+        <label class="field-label" for="api-url">Worker 地址</label>
+        <div class="inline-field">
+          <input id="api-url" type="url" placeholder="https://algo-notes-upload.example.workers.dev" autocomplete="url">
+          <button class="button button-primary" id="save-api" type="button">保存</button>
+        </div>
+        <p class="field-hint">部署说明位于 <code>worker/README.md</code>。</p>
+      </section>
+
+      <section class="panel login-panel" data-panel="login" hidden>
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow">AUTHENTICATION</p>
+            <h2>管理员登录</h2>
+          </div>
+          <button class="button button-quiet" id="change-api" type="button">更改接口</button>
+        </div>
+        <form id="login-form">
+          <label class="field-label" for="password">管理员密码</label>
+          <input id="password" type="password" required minlength="8" autocomplete="current-password" placeholder="输入密码后继续">
+          <button class="button button-primary" type="submit">登录并开始上传</button>
+        </form>
+        <p class="field-hint">密码只发送到你配置的 Worker，并不会保存在浏览器。</p>
+        <div class="result" id="login-result" role="status" aria-live="polite"></div>
+      </section>
+
+      <section class="panel upload-panel" data-panel="upload" hidden>
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow">MARKDOWN IMPORT</p>
+            <h2>提交题解</h2>
+          </div>
+          <button class="button button-quiet" id="logout" type="button">退出登录</button>
+        </div>
+
+        <div class="form-grid">
+          <div>
+            <label class="field-label" for="platform">目标平台</label>
+            <select id="platform">
+              <option value="codeforces">Codeforces</option>
+              <option value="nowcoder">牛客</option>
+              <option value="luogu">洛谷</option>
+              <option value="matiji">码蹄集</option>
+              <option value="acwing">ACWing</option>
+              <option value="others">其他</option>
+            </select>
+          </div>
+          <div>
+            <label class="field-label" for="subdirectory">子目录（可选）</label>
+            <input id="subdirectory" type="text" placeholder="例如：CF2209" autocomplete="off">
+            <p class="field-hint">只允许一个安全目录名，不需要输入斜杠。</p>
+          </div>
+        </div>
+
+        <label class="dropzone" id="dropzone" for="file-input" tabindex="0">
+          <input id="file-input" type="file" accept=".md,text/markdown" multiple>
+          <span class="drop-icon" aria-hidden="true">↓</span>
+          <strong>拖入 Markdown 文件</strong>
+          <span>或点击选择文件，可一次提交多个题解</span>
+        </label>
+
+        <div class="file-list" id="file-list" aria-live="polite"></div>
+
+        <div class="upload-options">
+          <label class="check-label"><input id="overwrite" type="checkbox"> 允许覆盖同名文件</label>
+          <span class="field-hint">单个文件限制为 1 MB。</span>
+        </div>
+
+        <button class="button button-primary upload-button" id="upload" type="button" disabled>提交到 GitHub</button>
+        <div class="result" id="result" role="status" aria-live="polite"></div>
+      </section>
+
+      <noscript><p class="panel error">此页面需要启用 JavaScript 才能使用。</p></noscript>
+    </main>
+  </body>
+</html>

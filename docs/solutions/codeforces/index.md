@@ -1,6 +1,6 @@
 <div class="section-hero">
   <h1>Codeforces 题解</h1>
-  <p>记录比赛与补题过程中的关键观察。当前从 CF2209 开始整理，后续会持续补充题目与复盘。</p>
+  <p>记录比赛与补题过程中的关键观察，按题目编号归档。</p>
 </div>
 
 ## CF2209
@@ -19,3 +19,9 @@
     <span class="article-meta">查看题解 →</span>
   </a>
 </div>
+
+## 其他题解
+
+<!-- AUTO_UPLOADS_START -->
+暂无已发布题解。
+<!-- AUTO_UPLOADS_END -->

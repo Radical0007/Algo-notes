@@ -1,8 +1,6 @@
 # Algo Notes
 
-蒋毅的个人算法知识库：记录刷题题解、算法思想、竞赛模板、专题训练和比赛复盘。
-
-站点地址：<https://radical0007.github.io/Algo-notes/>
+算法题解、竞赛模板、专题训练与比赛复盘的静态文档站。
 
 ## 本地预览
 
@@ -20,9 +18,10 @@ mkdocs serve
 | 内容 | 目录 |
 | --- | --- |
 | 刷题题解 | `docs/solutions/` |
-| 算法思想 | `docs/blog/` |
+| 算法专题 | `docs/blog/`、`docs/topics/` |
 | 算法模板 | `docs/algorithm-templates/` |
-| 专题训练 | `docs/topics/` |
 | 比赛复盘 | `docs/contests/` |
 
-新增 Markdown 文件后，在 `mkdocs.yml` 的 `nav` 中补充导航即可。
+## 管理员上传
+
+站点提供独立的管理员上传页，访问站点的 `/admin/` 路径即可打开。上传服务代码位于 `worker/`，部署和 Secret 配置说明见 [worker/README.md](worker/README.md)。

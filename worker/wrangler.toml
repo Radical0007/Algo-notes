@@ -1,0 +1,9 @@
+name = "algo-notes-upload"
+main = "src/index.js"
+compatibility_date = "2026-08-10"
+
+[vars]
+GITHUB_OWNER = "Radical0007"
+GITHUB_REPO = "Algo-notes"
+GITHUB_BRANCH = "main"
+ALLOWED_ORIGINS = "https://radical0007.github.io"

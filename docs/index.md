@@ -6,27 +6,27 @@ hide:
 
 <div class="home-editorial">
   <div class="home-intro">
-    <div class="home-kicker">Personal algorithm notebook / 2026</div>
-    <h1>蒋毅的算法学习站</h1>
-    <p class="home-lead">把刷过的题、想过的思路和踩过的坑，整理成下一次可以快速检索的知识。</p>
-    <p>这里主要记录刷题题解、算法思想、常用模板、专题训练和比赛复盘。站点保持简单，内容保持诚实：每篇文章都从问题出发，尽量写清楚为什么这样建模、为什么这个解法成立。</p>
+    <div class="home-kicker">ALGORITHM NOTES / PROBLEM SOLVING</div>
+    <h1>算法竞赛笔记</h1>
+    <p class="home-lead">题解、算法专题、竞赛模板与复盘记录的分类归档。</p>
+    <p>内容以可复现的解题过程为主，重点记录题意分析、建模依据、复杂度和实现细节，方便检索与复习。</p>
     <div class="home-actions">
-      <a class="md-button md-button--primary" href="solutions/">开始浏览题解</a>
-      <a class="md-button" href="about/">关于本站</a>
+      <a class="md-button md-button--primary" href="solutions/">浏览题解</a>
+      <a class="md-button" href="about/">站点说明</a>
     </div>
   </div>
 
   <div class="home-index">
-    <span><strong>03</strong> Codeforces 题解</span>
+    <span><strong>03</strong> 已整理题解</span>
     <span><strong>06</strong> 刷题平台</span>
-    <span><strong>05</strong> 知识模块</span>
-    <span><strong>∞</strong> 持续积累</span>
+    <span><strong>05</strong> 内容模块</span>
+    <span><strong>C++</strong> 主要语言</span>
   </div>
 
   <div class="home-columns">
     <section class="home-section">
       <h2>刷题题解</h2>
-      <p>从题意提炼到复杂度分析，记录真正能迁移到下一题的部分。</p>
+      <p>按平台归档题目，保留题意提炼、核心思路与复杂度分析。</p>
       <ul class="home-links">
         <li><a href="solutions/codeforces/">Codeforces <span>→</span></a></li>
         <li><a href="solutions/nowcoder/">牛客 <span>→</span></a></li>
@@ -36,8 +36,8 @@ hide:
     </section>
 
     <section class="home-section">
-      <h2>算法思想</h2>
-      <p>整理题目背后的观察、套路和建模方式，让知识形成自己的脉络。</p>
+      <h2>算法专题</h2>
+      <p>围绕常见算法思想和数据结构整理可迁移的解题方法。</p>
       <ul class="home-links">
         <li><a href="blog/">双指针、二分与 DP <span>→</span></a></li>
         <li><a href="algorithm-templates/">常用算法模板 <span>→</span></a></li>
@@ -65,5 +65,5 @@ hide:
     </div>
   </div>
 
-  <blockquote class="home-quote">好题解不是把代码贴出来，而是让未来的自己少走一次弯路。</blockquote>
+  <blockquote class="home-quote">记录内容以可复现的解题过程、复杂度分析和代码实现为主。</blockquote>
 </div>

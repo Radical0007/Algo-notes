@@ -1,7 +1,6 @@
 site_name: Algo Notes
 site_url: https://radical0007.github.io/Algo-notes/
-site_description: 蒋毅的个人算法知识库，记录题解、算法思想、竞赛模板与训练复盘。
-site_author: 蒋毅
+site_description: 算法题解、竞赛模板、专题训练与比赛复盘。
 
 repo_url: https://github.com/Radical0007/Algo-notes
 repo_name: Radical0007/Algo-notes
@@ -76,30 +75,27 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/Radical0007
       name: Radical0007 on GitHub
-    - icon: fontawesome/solid/envelope
-      link: mailto:13776047828@163.com
-      name: 联系邮箱
 
-copyright: Copyright &copy; 2026 蒋毅 · Built with curiosity and code.
+copyright: Copyright &copy; 2026 Algo Notes.
+
+not_in_nav: |
+  solutions/**/*.md
+  !solutions/**/index.md
 
 nav:
   - 首页: index.md
 
   - 刷题题解:
       - 题解总览: solutions/index.md
-      - Codeforces:
-          - 平台首页: solutions/codeforces/index.md
-          - CF2209A · Flip Flops: "solutions/codeforces/CF2209/A Flip Flops.md"
-          - CF2209B · Array: "solutions/codeforces/CF2209/B Array.md"
-          - CF2209C · Find the Zero: "solutions/codeforces/CF2209/C Find the Zero.md"
+      - Codeforces: solutions/codeforces/index.md
       - 牛客: solutions/nowcoder/index.md
       - 洛谷: solutions/luogu/index.md
       - 码蹄集: solutions/matiji/index.md
       - ACWing: solutions/acwing/index.md
       - 其他: solutions/others/index.md
 
-  - 算法思想: blog/index.md
+  - 算法专题: blog/index.md
   - 算法模板: algorithm-templates/index.md
   - 专题训练: topics/index.md
   - 比赛复盘: contests/index.md
-  - 关于我: about.md
+  - 站点说明: about.md

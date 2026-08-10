@@ -10,4 +10,4 @@
   <div class="topic-card"><h3>建模与证明</h3><p>先把题面翻译成可以计算的对象，再讨论算法为何正确。</p></div>
 </div>
 
-<div class="empty-state">文章会随着新的题解与复盘逐步补充，欢迎把这里当成长期积累的思考索引。</div>
+<div class="empty-state">暂无已发布专题文章。</div>
